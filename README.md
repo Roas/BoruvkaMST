@@ -12,6 +12,8 @@ Since some of the EWGs are very big they are not included in the repository. To 
 - [mediumEWG](https://algs4.cs.princeton.edu/43mst/mediumEWG.txt)
 - [largeEWG](https://algs4.cs.princeton.edu/43mst/largeEWG.txt)
 
+We suggest putting the EWGs in a folder called `/data_files/` in the project root.
+
 ## Unit Tests
 
 The beauty of this algorithm is that it includes unittests to check if the algorithm found the real MST for the EWG. The unit tests can be activated by adding `-ea` to the VM options.
