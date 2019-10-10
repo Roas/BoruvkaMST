@@ -1,4 +1,4 @@
-package nl.hva.boruvkamst.serial_impl;
+package nl.hva.boruvkamst.parallel_impl;
 
 import java.util.Random;
 

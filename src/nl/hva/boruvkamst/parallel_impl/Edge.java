@@ -1,4 +1,4 @@
-package nl.hva.boruvkamst.serial_impl;
+package nl.hva.boruvkamst.parallel_impl;
 
 
 public class Edge implements Comparable<Edge> {
