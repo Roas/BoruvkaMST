@@ -89,6 +89,23 @@ public class UF {
         count--;
     }
 
+    public void connect(int p, int q) {
+        if (find(p) != find(q)) {
+            int rootP = find(p);
+            int rootQ = find(q);
+            if (rootP == rootQ) return;
+
+            // make root of smaller rank point to root of larger rank
+            if      (rank[rootP] < rank[rootQ]) parent[rootP] = rootQ;
+            else if (rank[rootP] > rank[rootQ]) parent[rootQ] = rootP;
+            else {
+                parent[rootQ] = rootP;
+                rank[rootP]++;
+            }
+            count--;
+        }
+    }
+
     // validate that p is a valid index
     private void validate(int p) {
         int n = parent.length;

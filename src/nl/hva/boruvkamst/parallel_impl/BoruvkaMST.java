@@ -34,6 +34,7 @@ public class BoruvkaMST {
                 if (e != null) {
                     int v = e.either(), w = e.other(v);
                     // don't add the same edge twice
+                    // TODO: use the connect function here to simplify the locking mechanism
                     if (!uf.connected(v, w)) {
                         mst.add(e);
                         weight += e.weight();
